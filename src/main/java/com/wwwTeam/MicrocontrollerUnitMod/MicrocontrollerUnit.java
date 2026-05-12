@@ -1,6 +1,7 @@
 package com.wwwTeam.MicrocontrollerUnitMod;
 
 import com.mojang.logging.LogUtils;
+import com.wwwTeam.MicrocontrollerUnitMod.MCUItems.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -43,6 +44,7 @@ public class MicrocontrollerUnit
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        Moditems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
