@@ -33,7 +33,7 @@ import org.slf4j.Logger;
 public class MicrocontrollerUnit
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "MCU";
+    public static final String MODID = "mcu";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
